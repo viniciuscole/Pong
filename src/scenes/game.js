@@ -98,7 +98,7 @@ export default class Game extends Phaser.Scene{
             return
         }
 
-        const aiSpeed = 5
+        const aiSpeed = 3
         if(diff>0){
             this.paddleRightVelocity.y = aiSpeed
             if(this.paddleRightVelocity.y>10){
@@ -117,7 +117,7 @@ export default class Game extends Phaser.Scene{
     }
 
     checkScore(){
-        const maxScore = 1
+        const maxScore = 3
         if(this.ball.x<-30){
             this.sound.play('score')
             this.resetBall()
