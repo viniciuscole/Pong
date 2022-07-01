@@ -22,7 +22,7 @@ export default class Game extends Phaser.Scene{
         this.physics.add.existing(this.ball)
         this.ball.body.setCircle(10);
 
-        this.ball.body.setMaxSpeed(500);
+        this.ball.body.setMaxSpeed(700);
 
         this.ball.body.setCollideWorldBounds(true, 1,1)
         
@@ -98,7 +98,7 @@ export default class Game extends Phaser.Scene{
             return
         }
 
-        const aiSpeed = 8
+        const aiSpeed = 5
         if(diff>0){
             this.paddleRightVelocity.y = aiSpeed
             if(this.paddleRightVelocity.y>10){
