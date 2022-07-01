@@ -98,7 +98,7 @@ export default class Game extends Phaser.Scene{
             return
         }
 
-        const aiSpeed = 3
+        const aiSpeed = 5
         if(diff>0){
             this.paddleRightVelocity.y = aiSpeed
             if(this.paddleRightVelocity.y>10){
